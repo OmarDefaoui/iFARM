@@ -36,7 +36,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:text="Hello there,"
+                android:text="Bonjour,"
                 android:textColor="#212121"
                 android:textSize="32sp"
                 tools:ignore="MissingPrefix" />
@@ -46,7 +46,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/welcome_msg"
-                android:text="welcome back"
+                android:text="Bienvenue"
                 android:textColor="#212121"
                 android:textSize="32sp"
                 tools:ignore="MissingPrefix" />
@@ -74,7 +74,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:hint="Password"
+                android:hint="Mot de passe"
                 app:passwordToggleEnabled="true">
 
                 <EditText
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:onClick="onForgotPassword"
-                android:text="Forgot your Password ?"
+                android:text="Mot de passe oublié ?"
                 android:textAllCaps="false"
                 android:textColor="#757575"
                 android:textSize="16sp" />
@@ -108,7 +108,7 @@
                 android:textColor="#fff"
                 android:background="#4CAF50"
                 android:padding="10dp"
-                android:text="Sign In"
+                android:text="Se connecter"
                 android:textAllCaps="false"
                 android:textSize="16sp" />
 
@@ -131,7 +131,7 @@
         android:layout_gravity="bottom|center"
         android:layout_marginBottom="20dp"
         android:onClick="onRegister"
-        android:text="New here ? Sign Up instead"
+        android:text="Nouveau ? Créer un compte"
         android:textAllCaps="false"
         android:textColor="#757575"
         android:textSize="16sp" />
