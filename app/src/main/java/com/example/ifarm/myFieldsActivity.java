@@ -55,13 +55,13 @@ public class myFieldsActivity extends AppCompatActivity {
                 "Production/An : 912kg", "+0.12 %", R.drawable.bg2,
                 R.drawable.banane, R.drawable.ic_trending_up_green_24dp));
 
-        productModel.add(new ProductModel("TOMATES", "Superficie 200*200 m2",
-                "Production/An : 2 212kg", "+2.12 %", R.drawable.bg1,
-                R.drawable.tomate, R.drawable.ic_trending_up_green_24dp));
+        productModel.add(new ProductModel("KIWI", "Superficie 200*200 m2",
+                "Production/An : 3 126kg", "+1.08 %", R.drawable.bg3,
+                R.drawable.kiwi, R.drawable.ic_trending_up_green_24dp));
 
-        productModel.add(new ProductModel("BANNANE", "Superficie 200*200 m2",
-                "Production/An : 912kg", "+0.12 %", R.drawable.bg2,
-                R.drawable.banane, R.drawable.ic_trending_up_green_24dp));
+        productModel.add(new ProductModel("ORANGE", "Superficie 200*200 m2",
+                "Production/An : 3 019kg", "+3.11 %", R.drawable.bg1,
+                R.drawable.orange, R.drawable.ic_trending_up_green_24dp));
         productModel.add(new ProductModel("TOMATES", "Superficie 200*200 m2",
                 "Production/An : 2 212kg", "+2.12 %", R.drawable.bg1,
                 R.drawable.tomate, R.drawable.ic_trending_up_green_24dp));
