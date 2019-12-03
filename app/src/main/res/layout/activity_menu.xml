@@ -7,79 +7,83 @@
     android:background="@drawable/farm2"
     tools:context=".menuActivity">
 
-
     <LinearLayout
-        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <RelativeLayout
-            android:layout_marginRight="20dp"
-            android:layout_marginLeft="28dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="20dp">
 
 
             <TextView
-                android:layout_marginTop="52dp"
-                android:fontFamily="sans-serif-condensed-medium"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-condensed-medium"
                 android:text="KENITRA  22°"
                 android:textColor="#000000"
-                android:textSize="24sp"></TextView>
-
+                android:textSize="24sp" />
 
             <ImageView
-                    android:layout_marginTop="32dp"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_home_white_24dp"
-                    android:layout_width="82dp"
-                    android:layout_height="82dp">
+                android:id="@+id/iv_record"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="72dp"
+                android:src="@drawable/micro" />
 
-                </ImageView>
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/ic_home_white_24dp">
+
+            </ImageView>
         </RelativeLayout>
 
-
         <GridLayout
-            android:layout_marginLeft="30dp"
-            android:columnCount="2"
-            android:rowCount="3"
-            android:alignmentMode="alignMargins"
-            android:columnOrderPreserved="false"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
 
             <!--  FIRST ELEMENT OF THE GRID LAYOUT -->
-            
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/statistiques"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
-                app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
-                        android:src="@drawable/ic_trending_up_black_24dp"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
-                    
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_trending_up_black_24dp" />
+
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="STATISTIQUES"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="STATISTIQUES"
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
@@ -88,36 +92,36 @@
             </androidx.cardview.widget.CardView>
 
 
-        <!-- MES CHAMPS -->
+            <!-- MES CHAMPS -->
 
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/fields"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
-                app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
-                        android:src="@drawable/ic_panorama_black_24dp"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_panorama_black_24dp" />
 
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="MES CHAMPS"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="MES CHAMPS"
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
@@ -132,29 +136,29 @@
                 android:id="@+id/weather"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
-                app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
-                        android:src="@drawable/weather"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/weather" />
 
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="      METEO        "
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="      METEO        "
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
@@ -169,34 +173,32 @@
                 android:id="@+id/update"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
-                app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
-                        android:src="@drawable/ic_update_black_24dp"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_update_black_24dp" />
 
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text=" MISE A JOUR "
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text=" MISE A JOUR "
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
-
-
 
 
             </androidx.cardview.widget.CardView>
@@ -207,29 +209,29 @@
                 android:id="@+id/tips"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
-                app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
-                        android:src="@drawable/tip"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/tip" />
 
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="         TIPS         "
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="         TIPS         "
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
@@ -244,37 +246,35 @@
                 android:id="@+id/settings"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="12dp"
                 android:layout_weight="1"
-                app:cardElevation="6dp"
                 app:cardCornerRadius="12dp"
-                android:layout_margin="12dp">
+                app:cardElevation="6dp">
 
                 <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
 
                     <ImageView
-                        android:src="@drawable/ic_settings_black_24dp"
                         android:layout_width="80dp"
-                        android:layout_height="80dp"/>
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_settings_black_24dp" />
 
                     <TextView
-                        android:layout_marginTop="12dp"
-                        android:textSize="18sp"
-                        android:text="PARAMETRES"
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:text="PARAMETRES"
+                        android:textSize="18sp" />
 
 
                 </LinearLayout>
 
 
             </androidx.cardview.widget.CardView>
-
-
 
 
         </GridLayout>
