@@ -1,6 +1,8 @@
 package com.example.ifarm.model;
 
-public class ProductModel {
+import java.io.Serializable;
+
+public class ProductModel implements Serializable {
     String name, superficie, production, percentage;
     int color, icon, trendingIcon;
 

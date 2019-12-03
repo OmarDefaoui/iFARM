@@ -1,6 +1,7 @@
 package com.example.ifarm.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ifarm.R;
 import com.example.ifarm.model.ProductModel;
+import com.example.ifarm.ui.ProductDetails;
 
 import java.util.ArrayList;
 
@@ -38,7 +40,7 @@ public class RecyclerViewAdapterProduct extends RecyclerView.Adapter<RecyclerVie
     @Override
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder viewHolder, final int position) {
         ViewHolder holder = (ViewHolder) viewHolder;
-        ProductModel model = data.get(position);
+        final ProductModel model = data.get(position);
 
         holder.tv_name.setText(model.getName());
         holder.tv_superficie.setText(model.getSuperficie());
@@ -52,16 +54,9 @@ public class RecyclerViewAdapterProduct extends RecyclerView.Adapter<RecyclerVie
         holder.ll_container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "item" + position + " has been clicked", Toast.LENGTH_SHORT).show();
-            }
-        });
-
-        holder.ll_container.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-
-                Toast.makeText(context, "modify item: " + position, Toast.LENGTH_SHORT).show();
-                return false;
+                Intent intent = new Intent(context, ProductDetails.class);
+                intent.putExtra("model", model);
+                context.startActivity(intent);
             }
         });
     }
