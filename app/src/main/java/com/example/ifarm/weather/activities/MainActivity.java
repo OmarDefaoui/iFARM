@@ -197,6 +197,10 @@ public class MainActivity extends BaseActivity implements LocationListener {
         if (bundle != null && bundle.getBoolean("shouldRefresh")) {
             refreshWeather();
         }
+
+        if (getIntent().hasExtra("fromMain")) {
+            getCityByLocation();
+        }
     }
 
     public WeatherRecyclerAdapter getAdapter(int id) {

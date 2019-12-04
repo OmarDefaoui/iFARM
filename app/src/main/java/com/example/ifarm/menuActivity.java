@@ -23,12 +23,12 @@ public class menuActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_menu);
 
         //Defining CARDS
-        moveToStatistics = (CardView) findViewById(R.id.statistiques);
-        moveToFields = (CardView) findViewById(R.id.fields);
-        moveToWeather = (CardView) findViewById(R.id.weather);
-        moveToUpdate = (CardView) findViewById(R.id.update);
-        moveToTips = (CardView) findViewById(R.id.tips);
-        moveToSettings = (CardView) findViewById(R.id.settings);
+        moveToStatistics = findViewById(R.id.statistiques);
+        moveToFields = findViewById(R.id.fields);
+        moveToWeather = findViewById(R.id.weather);
+        moveToUpdate = findViewById(R.id.update);
+        moveToTips = findViewById(R.id.tips);
+        moveToSettings = findViewById(R.id.settings);
         iv_record = findViewById(R.id.iv_record);
 
 
@@ -57,6 +57,11 @@ public class menuActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.weather:
                 intent = new Intent(this, MainActivity.class);
+                intent.putExtra("fromMain", true);
+                startActivity(intent);
+                break;
+            case R.id.tips:
+                intent = new Intent(this, tipsActivity.class);
                 startActivity(intent);
                 break;
             case R.id.settings:
