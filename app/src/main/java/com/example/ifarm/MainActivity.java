@@ -22,6 +22,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        checkIfUserSignedIn();
+
         mDialog = new ProgressDialog(this);
         mDialog.setMessage("Please wait..");
         mDialog.setIndeterminate(true);
@@ -30,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
         email = findViewById(R.id.email);
         password = findViewById(R.id.password);
+    }
+
+    private void checkIfUserSignedIn() {
+        boolean isConnected = true;
+        if (isConnected) {
+            startActivity(new Intent(this, menuActivity.class));
+        }
     }
 
     public void onLogin(View view) {
