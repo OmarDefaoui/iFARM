@@ -122,18 +122,4 @@
         </LinearLayout>
 
     </ScrollView>
-
-    <Button
-        android:id="@+id/button2"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:layout_marginBottom="20dp"
-        android:onClick="onRegister"
-        android:text="Nouveau ? Créer un compte"
-        android:textAllCaps="false"
-        android:textColor="#757575"
-        android:textSize="16sp" />
-
 </FrameLayout>

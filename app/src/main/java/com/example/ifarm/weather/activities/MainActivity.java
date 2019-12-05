@@ -709,10 +709,6 @@ public class MainActivity extends BaseActivity implements LocationListener {
             Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
             startActivity(intent);
         }
-        if (id == R.id.action_about) {
-            aboutDialog();
-            return true;
-        }
         return super.onOptionsItemSelected(item);
     }
 

@@ -2,22 +2,15 @@ package com.example.ifarm;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.ifarm.account.RegisterActivity;
 import com.example.ifarm.utils.AnimationUtil;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
     private EditText email, password;
@@ -41,10 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onLogin(View view) {
         performLogin();
-    }
-
-    public void onRegister(View view) {
-        startActivity(new Intent(this, RegisterActivity.class));
     }
 
     public void onForgotPassword(View view) {

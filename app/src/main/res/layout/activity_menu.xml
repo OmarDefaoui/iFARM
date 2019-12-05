@@ -42,7 +42,7 @@
                 android:layout_height="52dp"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="22dp"
-                android:src="@drawable/ic_home_white_24dp">
+                android:src="@drawable/ic_home">
 
             </ImageView>
         </RelativeLayout>
@@ -77,7 +77,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ic_trending_up_black_24dp" />
+                        android:src="@drawable/ic_analytics" />
 
                     <TextView
                         style="@android:style/TextAppearance.DeviceDefault"
@@ -113,7 +113,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ic_panorama_black_24dp" />
+                        android:src="@drawable/ic_list" />
 
                     <TextView
                         style="@android:style/TextAppearance.DeviceDefault"
@@ -185,7 +185,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ic_update_black_24dp" />
+                        android:src="@drawable/ic_update" />
 
                     <TextView
                         style="@android:style/TextAppearance.DeviceDefault"
@@ -255,7 +255,7 @@
                     <ImageView
                         android:layout_width="80dp"
                         android:layout_height="80dp"
-                        android:src="@drawable/ic_settings_black_24dp" />
+                        android:src="@drawable/ic_settings" />
 
                     <TextView
                         style="@android:style/TextAppearance.DeviceDefault"

@@ -16,14 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.ProductDetails"></activity>
-        <activity
-            android:name=".ui.FormAddField"
-            android:theme="@style/LoginAppTheme" />
-        <activity
-            android:name=".account.RegisterActivity"
-            android:screenOrientation="portrait"
-            android:theme="@style/LoginAppTheme"
-            android:windowSoftInputMode="stateHidden" />
         <activity android:name=".field" />
         <activity android:name=".myFieldsActivity" />
         <activity android:name=".updateActivity" />
