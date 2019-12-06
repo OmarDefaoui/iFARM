@@ -1,6 +1,7 @@
 package com.example.ifarm.adapter;
 
 import android.content.Context;
+import android.text.method.ScrollingMovementMethod;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,6 +51,7 @@ public class OnBoardingScreenAdapter extends PagerAdapter {
         tv_title.setText(item.getTitle());
 
         TextView tv_content = (TextView) itemView.findViewById(R.id.tv_desc);
+        tv_content.setMovementMethod(new ScrollingMovementMethod());
         tv_content.setText(item.getDescription());
 
         container.addView(itemView);

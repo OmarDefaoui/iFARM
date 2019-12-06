@@ -47,13 +47,10 @@
                 android:gravity="center"
                 android:paddingLeft="30dp"
                 android:paddingRight="30dp"
+                android:scrollbars = "vertical"
                 android:text="here description"
                 android:textColor="#4A4A4A"
                 android:textSize="18sp" />
-
         </LinearLayout>
-
     </RelativeLayout>
-
-
 </LinearLayout>
